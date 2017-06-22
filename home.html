@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>PetDoc</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Sitio realizado para la práctica final de IPO.">
+    <meta name="keywords" content="">
+    <meta name="author" content="José Ángel García Gallego">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/tms-0.4.1.js"></script>
+    <script src="js/slider.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			function equalHeight(group) {
+				var tallest = 0;
+				group.each(function() {
+					var thisHeight = $(this).height();
+					if(thisHeight > tallest) {
+						tallest = thisHeight;
+					}
+				});
+				group.height(tallest);
+			}
+			equalHeight($(".box-1 .inner"));
+		})
+    </script>
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body id="page1">
+<!-- Header -->
+<header>
+    <div class="inner">
+        <h1 class="logo"><a href="home.html">Pet clinic</a></h1>
+        <div class="fright">
+
+            <div class="header-meta">
+                <div class="button-box">
+                    <a href="registro.html" class="button">REGISTRO</a>
+                </div>
+                <div class="button-box">
+                    <a href="acceso.html" class="button">ACCEDER</a>
+                </div>
+                <form id="search-form" method="post">
+                    <input type="text" onblur="if(this.value==''){this.value='search'}" onfocus="if(this.value=='search'){this.value=''}" value="search" name="search">
+                    <a class="search-form-submit" onclick="document.getElementById('search-form').submit()"></a>
+                </form>
+                <div class="col-elem">
+                    ¿Alguna duda? Llámanos.<br>
+                    <span class="phone">
+                        923-00-00-00
+                    </span>
+                </div>
+            </div>
+            <nav>
+                <ul class="sf-menu">
+                    <li class="current"><a href="home.html">Inicio</a></li>
+                    <li><a href="about.html">Sobre nosotros</a></li>
+                    <li><a href="services.html">Producto</a></li>
+                    <li><a href="contacts.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="slider-container">
+        <div class="mp-slider">
+            <ul class="items">
+                <li><img src="images/slide-1.jpg" alt=""></li>
+                <li><img src="images/slide-2.jpg" alt=""></li>
+                <li><img src="images/slide-3.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!-- Content -->
+<section id="content"><div class="ic"></div>
+    <div class="container_24">
+        <div class="indent-bot">
+            <article class="grid_6">
+                <div class="box-1">
+                    <div class="inner">
+                        <h3>¡Oferta Lanzamiento!</h3>
+                        <p class="p0">
+                            <strong class="str-1">
+                                Hasta fin de existencias
+                            </strong>
+                        </p>
+                        <p>
+                            ¡Llévate dos collares al 30% y comparte la experiencia con un amigo!
+                        </p>
+                        <div class="btn-container">
+                            <div class="button-box">
+                                <a href="services.html" class="button">Ver oferta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="grid_6">
+                <div class="box-1">
+                    <div class="inner">
+                        <h3>Los resultados nos avalan</h3>
+                        <p>
+                            9 de cada 10 veterinarios recomiendan nuestro producto para su mascota.
+                        </p>
+                        <div class="btn-container">
+                            <div class="button-box">
+                                <a href="services.html" class="button">Más info.</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="grid_6">
+                <div class="box-1">
+                    <div class="inner">
+                        <h3>No hay otro igual</h3>
+                        <p>
+                            Actualmente no existe otro sistema de control similar, aprovecha nuestras ofertas.
+                        </p>
+                        <div class="btn-container">
+                            <div class="button-box">
+                                <a href="services.html" class="button">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="grid_6">
+                <div class="box-1">
+                    <div class="inner">
+                        <h3>Clientes satisfechos</h3>
+                        <p>
+                            El 100% de nuestros clientes admite que la calidad de vida de su mascota es mayor.
+                        </p>
+                        <div class="btn-container">
+                            <div class="button-box">
+                                <a href="services.html" class="button">Empezar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <div class="clear"></div>
+        </div>
+        <div class="indent-bot-1">
+            <div class="grid_6">
+                <div class="inner-indent">
+                    <h2>Últimas noticias:</h2>
+                    <ul class="list-1">
+                        <li><a href="#">Nuevos envíos en 24 horas</a></li>
+                        <li><a href="#">Cras mattis tempor eros</a></li>
+                        <li><a href="#">Primera actualización.</a></li>
+                        <li><a href="#">Nuevo servicio de venta online.</a></li>
+                        <li><a href="#">Llegamos a las primeras 500 ventas.</a></li>
+                        <li><a href="#">¡Hola, mundo!</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid_18 indent-top">
+                <h2>Lo que dicen de nosotros;</h2>
+                <div class="wrapper" style="text-align:justify">
+                    <figure class="img-indent">
+                        <img src="images/page1-img1.png" alt="" class="img-indent-bot">
+                        <div class="author">
+                            <em>Carlos Gutiérrez.</em>
+                            (veterinario)
+                        </div>
+                    </figure>
+                    <blockquote class="quote extra-wrap">
+                        <strong>
+                            Al principio desconfiaba de este dispositivo, pero una vez que empezaron a venir más y más clientes con sus collares, empecé a preguntarles. Mucha gente se olvida de sus mascotas y cree que sólo deben comer y salir a pasear. Gracias a PetDoc los dueños comprenden mejor a sus mascotas. Todo el proceso es muy sencillo y el precio es muy razonable. Lo mejor de todo son las actualizaciones, donde se ve su poder de evolución.
+                        </strong>
+                    </blockquote>
+                </div>
+                <br>
+                <div class="wrapper" style="text-align:justify">
+                    <figure class="img-indent">
+                        <img src="images/page2-img3.png" alt="" class="img-indent-bot" width="80%">
+                        <div class="author">
+                            <em>Elvira Marcos.</em>
+                            (auxiliar)
+                        </div>
+                    </figure>
+                    <blockquote class="quote extra-wrap">
+                        <strong>
+                            Es perfecto para la gente que pasa muchas horas fuera de casa y no se puede llevar a su mascota. Puedes saber cómo está en todo momento, además de su estado de ánimo o temperatura. Un gran avance para nuestros compañeros de piso. Gracias a sus servicios recibo menor número de llamadas para consultas rápidas, lo que me hacía pausar las consultas que tenía en mi clínica veterinaria. Sin duda un gran avance para los amantes de los animales y para su correcto cuidado y mantenimiento.
+                        </strong>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer>
+    <div class="copyright">
+        &copy; 2017 PetDoc&Co. Todos los derechos reservados. Contacto: info@petdoc.com
+    </div>
+</footer>
+</body>
+</html>

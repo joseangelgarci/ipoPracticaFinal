@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>PetDoc - Usuario</title>
+  	<meta charset="utf-8">
+    <meta name="description" content="Sitio realizado para la práctica final de IPO.">
+    <meta name="keywords" content="">
+    <meta name="author" content="José Ángel García Gallego">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			function equalHeight(group) {
+				var tallest = 0;
+				group.each(function() {
+					var thisHeight = $(this).height();
+					if(thisHeight > tallest) {
+						tallest = thisHeight;
+					}
+				});
+				group.height(tallest);
+			}	
+			equalHeight($(".box-1 .inner"));
+		})
+	</script>
+    <style>
+        .google-maps {
+            position: relative;
+            padding-bottom: 75%;
+            // This is the aspect ratio height: 0;
+            overflow: hidden;
+        }
+
+            .google-maps iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100% !important;
+                height: 100% !important;
+            }
+    </style>
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body>
+<!-- Header -->
+    <header>
+        <div class="inner">
+            <h1 class="logo"><a href="home.html">Pet clinic</a></h1>
+            <div class="fright">
+
+                <div class="header-meta">
+                    <div class="button-box">
+                        <a href="home.html" class="button">CERRAR SESIÓN</a>
+                    </div>
+                    <form id="search-form" method="post">
+                        <input type="text" onblur="if(this.value==''){this.value='search'}" onfocus="if(this.value=='search'){this.value=''}" value="search" name="search">
+                        <a class="search-form-submit" onclick="document.getElementById('search-form').submit()"></a>
+                    </form>
+                    <div class="col-elem">
+                        ¿Alguna duda? Llámanos.<br>
+                        <span class="phone">
+                            923-00-00-00
+                        </span>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="sf-menu">
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                        <li><a href="services.html">Producto</a></li>
+                        <li><a href="contacts.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+<!-- Content -->
+<section id="content"><div class="ic"></div>
+    <div class="container_24">
+
+        <div class="wrapper">
+            <article class="grid_16">
+                    <div class="pad-right">
+                        <div class="wrapper">
+                            <img src="images/toby.jpg" alt="" width="50%"class="img-indent-1">
+                            <div class="extra-wrap">
+                                <p class="p2">
+                                    <h5><strong>
+                                        Información de TOBY
+                                    </strong></h5>
+                                </p>
+                                <p class="p0">
+                                    <h5>
+                                            <strong>Nº Chip:&emsp;</strong><t> 9658493884838383<br>
+                                            <strong>Fecha nac:&emsp;</strong><t>14 - 6 - 2013<br>
+                                            <strong>Raza:&emsp;</strong><t>Labrador Retriever
+                                    </h5>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+            <article class="grid_16">
+                <br />
+                <h2 style="color:black">LOCALIZACIÓN:</h2>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <section class="container_24">
+        <article>
+            <center>
+                <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1506.4926533790122!2d-5.669304441920593!3d40.95990072034748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3f26406b58d75d%3A0x1ca430eaa22461c!2sCalle+Veracruz%2C+37008+Salamanca!5e0!3m2!1ses!2ses!4v1498063356588" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            </center>
+        </article>
+    </section>
+<!-- Footer -->
+    <footer>
+        <div class="copyright">
+            &copy; 2017 PetDoc&Co. Todos los derechos reservados. Contacto: info@petdoc.com
+        </div>
+    </footer>
+</body>
+</html>

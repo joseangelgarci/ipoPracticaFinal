@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  	<title>PetDoc - Usuario</title>
+  	<meta charset="utf-8">
+    <meta name="description" content="Sitio realizado para la práctica final de IPO.">
+    <meta name="keywords" content="">
+    <meta name="author" content="José Ángel García Gallego">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/superfish.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			function equalHeight(group) {
+				var tallest = 0;
+				group.each(function() {
+					var thisHeight = $(this).height();
+					if(thisHeight > tallest) {
+						tallest = thisHeight;
+					}
+				});
+				group.height(tallest);
+			}	
+			equalHeight($(".box-1 .inner"));
+		})
+	</script>
+<!--[if lt IE 8]>
+   <div style=' clear: both; text-align:center; position: relative;'>
+     <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+       <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+    </a>
+  </div>
+<![endif]-->
+<!--[if lt IE 9]>
+	<script src="js/html5.js"></script>
+	<link rel="stylesheet" href="css/ie.css"> 
+<![endif]-->
+</head>
+<body>
+<!-- Header -->
+    <header>
+        <div class="inner">
+            <h1 class="logo"><a href="home.html">Pet clinic</a></h1>
+            <div class="fright">
+
+                <div class="header-meta">
+                    <div class="button-box">
+                        <a href="home.html" class="button">CERRAR SESIÓN</a>
+                    </div>
+                    <form id="search-form" method="post">
+                        <input type="text" onblur="if(this.value==''){this.value='search'}" onfocus="if(this.value=='search'){this.value=''}" value="search" name="search">
+                        <a class="search-form-submit" onclick="document.getElementById('search-form').submit()"></a>
+                    </form>
+                    <div class="col-elem">
+                        ¿Alguna duda? Llámanos.<br>
+                        <span class="phone">
+                            923-00-00-00
+                        </span>
+                    </div>
+                </div>
+                <nav>
+                    <ul class="sf-menu">
+                        <li><a href="home.html">Inicio</a></li>
+                        <li><a href="about.html">Sobre nosotros</a></li>
+                        <li><a href="services.html">Producto</a></li>
+                        <li><a href="contacts.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+<!-- Content -->
+    <section id="content">
+        <div class="ic"></div>
+        <div class="container_24">
+
+            <div class="wrapper">
+                <article class="grid_16">
+                    <div class="pad-right">
+                        <div class="wrapper">
+                            <img src="images/toby.jpg" alt="" width="50%" class="img-indent-1">
+                            <div class="extra-wrap">
+                                <p class="p2">
+                                    <h5>
+                                        <strong>
+                                            Información de TOBY
+                                        </strong>
+                                    </h5>
+                                </p>
+                                <p class="p0">
+                                    <h5>
+                                        <strong>Nº Chip:&emsp;</strong><t>
+                                            9658493884838383<br>
+                                            <strong>Fecha nac:&emsp;</strong><t>
+                                                14 - 6 - 2013<br>
+                                                <strong>Raza:&emsp;</strong><t>Labrador Retriever
+                                    </h5>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="grid_16">
+                    <br /><br />
+                    <h2 style="color:black">ARCHIVO DE RAYOS:</h2>
+                </article>
+
+                    <article class="grid_16">
+                        <h2>2017:</h2>
+                        <div class="wrapper">
+                            <div class="grid_4 alpha">
+                                <a href="images/radio1.png" target="_blank"><img src="images/logoRadio.png" style="width:60%" alt="" class="img-indent-bot"></a>
+                                <div class="author">
+                                    <em>
+                                        31 - Marzo
+                                    </em>
+                                </div>
+                            </div>
+                            <div class="grid_4 alpha">
+                                <a href="images/radio2.jpg" target="_blank"><img src="images/logoRadio.png" style="width:60%" alt="" class="img-indent-bot"></a>
+                                <div class="author">
+                                    <em>
+                                        20 - Agosto
+                                    </em>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="grid_16">
+                        <br /><br />
+                        <h2>2016:</h2>
+                        <div class="wrapper">
+                            <div class="grid_4 alpha">
+                                <a href="images/radio1.png" target="_blank"><img src="images/logoRadio.png" style="width:60%" alt="" class="img-indent-bot"></a>
+                                <div class="author">
+                                    <em>
+                                        24 - Abril
+                                    </em>
+                                </div>
+                            </div>
+                            <div class="grid_4 alpha">
+                                <a href="images/radio2.jpg" target="_blank"><img src="images/logoRadio.png" style="width:60%" alt="" class="img-indent-bot"></a>
+                                <div class="author">
+                                    <em>
+                                        15 - Octubre
+                                    </em>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+</div>
+        </div>
+    </section>
+<!-- Footer -->
+    <footer>
+        <div class="copyright">
+            &copy; 2017 PetDoc&Co. Todos los derechos reservados. Contacto: info@petdoc.com
+        </div>
+    </footer>
+</body>
+</html>
